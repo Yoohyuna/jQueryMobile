@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,
+                                                   maximum-scale=1.0,minimum-scale=1.0,
+                                                   user-scalable=no">
+
+<title>jQuery mobile예제</title>
+<link rel="stylesheet" href="../mobile/jquery.mobile-1.3.2.min.css">
+<script type="text/javascript" src="../mobile/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../mobile/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+<!--
+  1.header =>버튼은 data-role="button"은 생략이 가능,버튼이 만들어지면 자동->좌우배치
+                    강제로 일반버튼을 오른쪽에 배치->class="ui-btn-right" 부여
+  -->
+    <div data-role="header">
+       <h1>이전,다음버튼을 생성</h1>
+       <a href="#" data-icon="arrow-l">이전버튼</a>
+       <a href="#" data-icon="arrow-r">다음버튼</a>
+    </div>
+  
+  <!-- 2.content 지정(버튼을 생성할때 반드시 data-role="button"을 생략하면 안된다. -->
+    <div data-role="content">
+       <a href="#" data-icon="arrow-l">data-icon="arrow-l"</a>
+       <a href="#" data-role="button" data-icon="arrow-r">data-icon="arrow-r"</a>
+    </div>
+  
+  <!-- 3.Footer 지정
+    header와의 공통점->data-role="button"을 생략할 수 있다.
+                     차이점->만들어진 버튼은 좌우로 자동으로 배치가 안된다.
+      ->좌우배치를 할려면 클래스속성을 부여(ui-btn-left,ui-btn-right)이용
+   -->
+   <div data-role="footer">
+       <h1>화면하단</h1>
+       <a href="#" data-icon="arrow-l" class="ui-btn-left">이전버튼</a>
+       <a href="#" data-icon="arrow-r" class="ui-btn-right">다음버튼</a>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
